@@ -11,19 +11,22 @@
     text-align: center;
 }
 .body{
-    background-color: #FFCE32;
+    background-color: #faf16d;
 }
 .label{
     font-size: 2000px;
 }
-.b1{
-    float: right;
-    height: 150px;
-    width: 150px;
+.bb{
+  float: right;  
+  height: 100px;
 
-    
-  
 }
+.space{
+    font-size:20px ;
+}
+    
+
+
 #s1{
     color: #1D63FF;
 }
@@ -54,4 +57,7 @@
     width: 100px;
     font-weight: 800;
     color: white;
+    float:left;
 }
+
+

@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="icon" href="WhatsApp Image 2023-08-13 at 1.00.35 PM.jpeg" type="image/icon type">
         <title> Know your health </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="eye.css">
@@ -13,7 +14,7 @@
         <div class="head">
 <h1 class="h1">Opthamological Questionaire</h1>
 </div>
-<h2 for="symptom1" >1.Do you have blurr vision?  <input type="checkbox" id="symptom1"><br></h2>
+<h2 for="symptom1" id="s1" >1.Do you have blurr vision?  <input type="checkbox" id="symptom1"><br></h2>
 
 
 <h2 for="symptom2" hidden id="s2" >2.Do you experience eye redness? <input type="checkbox" id="symptom2"></h2>
@@ -40,10 +41,36 @@
 
 
 
-<button class="b1" onclick="back()"><img src="WhatsApp Image 2023-08-13 at 6.14.36 PM.jpeg"></button>
+<img class="bb" onclick="back()" src="image.png">
+<br>
 <br>
 <button class="b2" onclick="checkSymptoms()">Results</button>
-<h2 class="" id="result"></h2>
+<h2  id="result"></h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 style="color: #0693e3;" >Health Tips</h2>
+<p class="space">
+    • Eat right to protect your sight. Keep your eyes healthy by eating a well-balanced diet.
+    <br>
+    •Wear your glasses. 
+    <br>
+    •Keep the germs away
+    <br>
+    • Give your eyes a break
+    <br>
+    • Say no to smoking.
+    <br>
+    • Keep the germs away. 
+</p> 
+
+
+
+
+
 
 <script>
 function checkSymptoms() {
@@ -63,6 +90,8 @@ function checkSymptoms() {
     else{
         result= document.getElementById("s2").hidden="";
        result= document.getElementById("s3").hidden=""; 
+       result=  document.getElementById("s4").style.display = 'none';
+        result=  document.getElementById("s5").style.display = 'none';
        result=" You are healthy,You are wealthy😀💖💖 ";
        
 
@@ -92,11 +121,12 @@ function checkSymptoms() {
     if (symptom2 && symptom3 && symptom5){result="You need to visit a doctor";}
     if (symptom2 && symptom4 && symptom5){result="You need to visit a doctor";}
     if (symptom3 && symptom4 && symptom5){result="You need to visit a doctor";}
-    if (symptom1 && symptom2 && symptom3 && symptom4){ result = 'You  need to visit a hospital.';}
-    if (symptom1 && symptom2 && symptom3 && symptom5){ result = 'You  need to visit a hospital.';}
-    if (symptom1 && symptom3 && symptom4 && symptom5){ result = 'You  need to visit a hospital.';}
-    if (symptom1 && symptom2 && symptom3 && symptom4 && symptom5){ result = 'You  need to visit a hospital.';}
-    if (symptom2 && symptom3 && symptom4 && symptom5){ result = 'You  need to visit a hospital.';}
+    if (symptom1 && symptom2 && symptom3 && symptom4){ result = 'You immediately need to visit a doctor.';}
+    if (symptom1 && symptom2 && symptom3 && symptom5){ result = 'You immediately need to visit a doctor.';}
+    if (symptom1 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to visit a doctor.';}
+    if (symptom1 && symptom2 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to visit a doctor.';}
+    if (symptom2 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to visit a doctor.';}
+
 
 
 

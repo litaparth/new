@@ -4,6 +4,15 @@ body {
     padding: 0;
     padding-top: 800px;
     text-align: center;
+    background:#61E294;
+    
+}
+
+
+.img3{
+height: 400px;
+width: 100%;
+
 }
 
 
@@ -12,13 +21,14 @@ body {
     position:absolute;
     color: #FFFFFF;
     bottom:0px;
-    background:#42dbb9 ;
-    display: table;
+    background:#61E294;
+    
     width: 100%;
     height: 100%;
+    
     z-index: 9;
     margin-bottom: 0px;
-    padding: 0px;
+    
     
 
   
@@ -129,6 +139,7 @@ margin: 8px auto ;
 
 
 .logo{
+    
     padding-top: 50px;
     width:550px;
     height: 250px;
@@ -165,13 +176,16 @@ p {
 
 .menu {
     position: fixed;
-    background-color:#00BCFF;
+    
+    background:#61E294;
     width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
     top: 0px;
     z-index: 10;
+    color: #05386B;
     
+    text-align: left;
     
     
   
@@ -186,14 +200,20 @@ p {
     padding-right: 25px;
     font-family: fantasy;
     font-size: 20px;
+    text-align: left;
+   
     
 
     
     
 }
+.welcome{
+    font-weight:bolder;
+}
 .ins{
     font-family:simplifica;
     font-size: 20px;
+    font-weight:bolder;
 }
 
 .links:hover {
@@ -237,6 +257,7 @@ a {
     height:325px;
     text-align: left;
     margin-bottom: 0px;
+    
 }
 .heart{
     color:rgb(1, 27, 1) ; color:rgb(1, 27, 1) ;
@@ -254,6 +275,8 @@ a {
     margin-top: 0;
     padding-top: 0;
 }
+
+
 
 
 

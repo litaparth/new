@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="icon" href="WhatsApp Image 2023-08-13 at 1.00.35 PM.jpeg" type="image/icon type">
         <title> Know your health </title>
     <link rel="stylesheet" href="car.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
         <div class="head">
 <h1 class="h1">Cardiac Questionaire</h1>
 </div>
-<h2 for="symptom1" id="s1">1.Do you experience shortness of breathe during routine activities? <input type="checkbox" id="symptom1"><br></h2>
+<h2 for="symptom1" id="s1" >1.Do you experience shortness of breathe during routine activities? <input type="checkbox" id="symptom1"><br></h2>
 
 
 <h2 for="symptom2" id="s2" hidden >2."Do you have swelling in the feet/ankle/legs(shoes feel tighter)or abdomen?  <input type="checkbox" id="symptom2"></h2>
@@ -38,11 +39,41 @@
 
 
 
-
-<button class="b1" onclick="back()"><img src="WhatsApp Image 2023-08-13 at 6.14.36 PM.jpeg"></button>
+<img class="bb" onclick="back()" src="image.png">
+<br>
 <br>
 <button class="b2" onclick="checkSymptoms()">Results</button>
+
 <h2 id="result"></h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 style="color: #0693e3;" >Health Tips</h2>
+<p class="space">
+•	Eat healthy 
+<br>
+•	Get active
+<br> 
+•	Stay at a healthy weight
+<br>
+•	Quit smoking and stay away from secondhand smoke 
+<br>
+•	Control your cholesterol and blood pressure 
+<br>
+•	Drink alcohol only in moderation
+<br> 
+•	Manage stress 
+ 
+</p> 
+
+
+
+
+
 
 <script>
 function checkSymptoms() {
@@ -58,11 +89,14 @@ function checkSymptoms() {
        result= document.getElementById("s3").hidden="";
        result= document.getElementById("s4").hidden="";
        result= document.getElementById("s5").hidden="";
+
     }
   
     else{
         result= document.getElementById("s2").hidden="";
         result= document.getElementById("s3").hidden="";
+        result=  document.getElementById("s4").style.display = 'none';
+        result=  document.getElementById("s5").style.display = 'none';
         result=" You are healthy,You are wealthy 😀💖💖 "; 
     }
     if (symptom1){ result='You probably need to visit a doctor';}   
@@ -90,11 +124,11 @@ function checkSymptoms() {
     if (symptom2 && symptom3 && symptom5){result="You need to visit a doctor";}
     if (symptom2 && symptom4 && symptom5){result="You need to visit a doctor";}
     if (symptom3 && symptom4 && symptom5){result="You need to visit a doctor";}
-    if (symptom1 && symptom2 && symptom3 && symptom4){ result = 'You  need to visit a hospital.';}
-    if (symptom1 && symptom2 && symptom3 && symptom5){ result = 'You  need to visit a hospital.';}
-    if (symptom1 && symptom3 && symptom4 && symptom5){ result = 'You  need to visit a hospital.';}
-    if (symptom1 && symptom2 && symptom3 && symptom4 && symptom5){ result = 'You  need to visit a hospital.';}
-    if (symptom2 && symptom3 && symptom4 && symptom5){ result = 'You  need to visit a hospital.';}
+    if (symptom1 && symptom2 && symptom3 && symptom4){ result = 'You immediately need to visit a doctor.';}
+    if (symptom1 && symptom2 && symptom3 && symptom5){ result = 'You immediately need to visit a doctor.';}
+    if (symptom1 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to visit a doctor.';}
+    if (symptom1 && symptom2 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to visit a doctor.';}
+    if (symptom2 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to visit a doctor.';}
 
 
 
